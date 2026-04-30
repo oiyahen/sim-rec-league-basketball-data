@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Caleb Wright Player Report</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+    color: #222;
+}
+
+.container {
+    background: white;
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    gap: 25px;
+    align-items: start;
+}
+
+.player-title h1 {
+    margin-bottom: 5px;
+}
+
+.meta {
+    color: #666;
+    font-size: 15px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.card div {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+h2 {
+    margin-top: 35px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+}
+
+.shot-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.shot-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.simple-court {
+    width: 260px;
+    height: 230px;
+    margin: auto;
+    position: relative;
+    border: 3px solid #222;
+    border-top: none;
+    border-radius: 0 0 130px 130px;
+    background: white;
+}
+
+.arc {
+    position: absolute;
+    left: 35px;
+    top: 55px;
+    width: 190px;
+    height: 150px;
+    border: 3px solid #222;
+    border-top: none;
+    border-radius: 0 0 95px 95px;
+}
+
+.paint {
+    position: absolute;
+    left: 95px;
+    top: 95px;
+    width: 70px;
+    height: 90px;
+    border: 2px solid #222;
+}
+
+.hoop {
+    position: absolute;
+    left: 117px;
+    top: 185px;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #222;
+    border-radius: 50%;
+}
+
+.shot-box {
+    position: absolute;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.inside-box {
+    left: 72px;
+    top: 112px;
+    width: 115px;
+}
+
+.outside-box {
+    left: 45px;
+    top: 25px;
+    width: 170px;
+}
+
+.shot-box span {
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.hot {
+    background: #ffb3b3;
+}
+
+.warm {
+    background: #ffd9b3;
+}
+
+.normal {
+    background: #eeeeee;
+}
+
+.chill {
+    background: #cce0ff;
+}
+
+.cold {
+    background: #b3d9ff;
+}
+
+.legend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 11px;
+}
+
+.legend-item {
+    padding: 5px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: none;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <div class="player-title">
+        <h1>Caleb Wright</h1>
+        <div class="meta">
+            Team: HomeGrown |
+            Record: 2-10 |
+            Games Played: 12
+        </div>
+
+        <h2>Career Highs</h2>
+        <div class="card-grid">
+            <div class="card"><h3>MIN</h3><div>37</div></div>
+            <div class="card"><h3>PTS</h3><div>18</div></div>
+            <div class="card"><h3>REB</h3><div>10</div></div>
+            <div class="card"><h3>AST</h3><div>6</div></div>
+            <div class="card"><h3>STL</h3><div>3</div></div>
+            <div class="card"><h3>BLK</h3><div>2</div></div>
+        </div>
+    </div>
+
+    <div class="shot-card">
+        <div class="shot-title">Shooting Profile</div>
+
+        <div class="simple-court">
+            <div class="arc"></div>
+            <div class="paint"></div>
+            <div class="hoop"></div>
+
+            <div class="shot-box outside-box normal">
+                Outside Arc
+                <span>18-37</span>
+                <span>48.6% | Normal</span>
+            </div>
+
+            <div class="shot-box inside-box hot">
+                Inside Arc
+                <span>55-84</span>
+                <span>65.5% | Hot</span>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item hot">Hot 60%+</div>
+            <div class="legend-item warm">Warm 50-59%</div>
+            <div class="legend-item normal">Normal 40-49%</div>
+            <div class="legend-item chill">Chill 30-39%</div>
+            <div class="legend-item cold">Cold &lt; 30%</div>
+        </div>
+
+        <div class="note">This uses actual 2PT and 3PT shooting data, not simulated shot locations.</div>
+    </div>
+</div>
+
+<h2>Season Averages</h2>
+<div class="card-grid">
+    <div class="card"><h3>MPG</h3><div>25.8</div></div>
+    <div class="card"><h3>PPG</h3><div>12.8</div></div>
+    <div class="card"><h3>RPG</h3><div>6.8</div></div>
+    <div class="card"><h3>APG</h3><div>3.8</div></div>
+    <div class="card"><h3>SPG</h3><div>1.4</div></div>
+    <div class="card"><h3>BPG</h3><div>1.1</div></div>
+</div>
+
+<h2>Advanced Metrics</h2>
+<div class="card-grid">
+    <div class="card"><h3>FG%</h3><div>60.3%</div></div>
+    <div class="card"><h3>2P%</h3><div>65.5%</div></div>
+    <div class="card"><h3>3P%</h3><div>48.6%</div></div>
+    <div class="card"><h3>eFG%</h3><div>67.8%</div></div>
+    <div class="card"><h3>TS%</h3><div>58.7%</div></div>
+    <div class="card"><h3>AST/TO</h3><div>1.44</div></div>
+</div>
+
+<div class="card-grid">
+    <div class="card"><h3>FT%</h3><div>33.3%</div></div>
+    <div class="card"><h3>TOPG</h3><div>2.7</div></div>
+    <div class="card"><h3>PFPG</h3><div>2.8</div></div>
+    <div class="card"><h3>Off Rating</h3><div>94.3</div></div>
+    <div class="card"><h3>Def Rating</h3><div>92.5</div></div>
+    <div class="card"><h3>Net Rating</h3><div>1.8</div></div>
+</div>
+
+<div class="note">
+    Offensive Rating, Defensive Rating, and Net Rating are estimates because we do not have play-by-play or on-court lineup data yet.
+</div>
+
+<h2>Game Box Scores</h2>
+<div class="table-wrap">
+<table>
+<tr>
+    <th>Game</th>
+    <th>MIN</th>
+    <th>PTS</th>
+    <th>REB</th>
+    <th>AST</th>
+    <th>STL</th>
+    <th>BLK</th>
+    <th>TO</th>
+    <th>FG</th>
+    <th>FG%</th>
+    <th>3PT</th>
+    <th>3PT%</th>
+    <th>FT</th>
+    <th>eFG%</th>
+    <th>TS%</th>
+    <th>AST/TO</th>
+</tr>
+
+        <tr>
+            <td>5</td>
+            <td>36</td>
+            <td>10</td>
+            <td>10</td>
+            <td>6</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>5-10</td>
+            <td>50.0%</td>
+            <td>0-1</td>
+            <td>0.0%</td>
+            <td>0-1</td>
+            <td>50.0%</td>
+            <td>47.9%</td>
+            <td>3.00</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>21</td>
+            <td>13</td>
+            <td>6</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>6-9</td>
+            <td>66.7%</td>
+            <td>3-4</td>
+            <td>75.0%</td>
+            <td>1-1</td>
+            <td>83.3%</td>
+            <td>68.9%</td>
+            <td>2.00</td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td>19</td>
+            <td>18</td>
+            <td>4</td>
+            <td>5</td>
+            <td>0</td>
+            <td>1</td>
+            <td>5</td>
+            <td>9-11</td>
+            <td>81.8%</td>
+            <td>3-4</td>
+            <td>75.0%</td>
+            <td>0-0</td>
+            <td>95.5%</td>
+            <td>81.8%</td>
+            <td>1.00</td>
+        </tr>
+        
+        <tr>
+            <td>15</td>
+            <td>23</td>
+            <td>16</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>8-13</td>
+            <td>61.5%</td>
+            <td>3-4</td>
+            <td>75.0%</td>
+            <td>0-0</td>
+            <td>73.1%</td>
+            <td>61.5%</td>
+            <td>4.00</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td>34</td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>0</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1-5</td>
+            <td>20.0%</td>
+            <td>0-0</td>
+            <td>0.0%</td>
+            <td>1-4</td>
+            <td>20.0%</td>
+            <td>22.2%</td>
+            <td>1.00</td>
+        </tr>
+        
+        <tr>
+            <td>19</td>
+            <td>19</td>
+            <td>13</td>
+            <td>8</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6-9</td>
+            <td>66.7%</td>
+            <td>0-1</td>
+            <td>0.0%</td>
+            <td>1-4</td>
+            <td>66.7%</td>
+            <td>60.4%</td>
+            <td>0.33</td>
+        </tr>
+        
+        <tr>
+            <td>26</td>
+            <td>25</td>
+            <td>14</td>
+            <td>3</td>
+            <td>5</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td>7-10</td>
+            <td>70.0%</td>
+            <td>3-3</td>
+            <td>100.0%</td>
+            <td>0-1</td>
+            <td>85.0%</td>
+            <td>67.0%</td>
+            <td>2.50</td>
+        </tr>
+        
+        <tr>
+            <td>30</td>
+            <td>13</td>
+            <td>11</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1</td>
+            <td>5</td>
+            <td>5-8</td>
+            <td>62.5%</td>
+            <td>3-6</td>
+            <td>50.0%</td>
+            <td>1-2</td>
+            <td>81.2%</td>
+            <td>61.9%</td>
+            <td>0.40</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td>37</td>
+            <td>14</td>
+            <td>10</td>
+            <td>4</td>
+            <td>2</td>
+            <td>0</td>
+            <td>4</td>
+            <td>7-13</td>
+            <td>53.8%</td>
+            <td>1-5</td>
+            <td>20.0%</td>
+            <td>0-2</td>
+            <td>57.7%</td>
+            <td>50.4%</td>
+            <td>1.00</td>
+        </tr>
+        
+        <tr>
+            <td>36</td>
+            <td>20</td>
+            <td>15</td>
+            <td>10</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>7-14</td>
+            <td>50.0%</td>
+            <td>2-4</td>
+            <td>50.0%</td>
+            <td>1-1</td>
+            <td>57.1%</td>
+            <td>51.9%</td>
+            <td>1.00</td>
+        </tr>
+        
+        <tr>
+            <td>38</td>
+            <td>29</td>
+            <td>15</td>
+            <td>10</td>
+            <td>6</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5</td>
+            <td>7-12</td>
+            <td>58.3%</td>
+            <td>0-4</td>
+            <td>0.0%</td>
+            <td>1-2</td>
+            <td>58.3%</td>
+            <td>58.2%</td>
+            <td>1.20</td>
+        </tr>
+        
+        <tr>
+            <td>40</td>
+            <td>34</td>
+            <td>11</td>
+            <td>9</td>
+            <td>5</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>5-7</td>
+            <td>71.4%</td>
+            <td>0-1</td>
+            <td>0.0%</td>
+            <td>1-3</td>
+            <td>71.4%</td>
+            <td>66.1%</td>
+            <td>5.00</td>
+        </tr>
+        
+</table>
+</div>
+
+</div>
+</body>
+</html>

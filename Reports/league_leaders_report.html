@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>League Leaders</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 18px;
+    background: #fafafa;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+td:nth-child(2), th:nth-child(2) {
+    text-align: left;
+}
+
+.note {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: none;
+    }
+}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+<h1>League Leaders</h1>
+<div class="note">Minimum 5 games played. FG% requires 30 FGA. 3FG% requires 15 3FGA.</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>Points Per Game</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>PPG</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Jordan Price</td>
+                <td>BB</td>
+                <td>6</td>
+                <td>13.0</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Caleb Wright</td>
+                <td>HG</td>
+                <td>12</td>
+                <td>12.8</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Cameron Ellis</td>
+                <td>SH</td>
+                <td>12</td>
+                <td>11.8</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Devin Harris</td>
+                <td>HG</td>
+                <td>12</td>
+                <td>11.6</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Noah Grant</td>
+                <td>TE</td>
+                <td>12</td>
+                <td>11.4</td>
+            </tr>
+            
+</table>
+</div>
+
+<div class="card">
+<h2>Rebounds Per Game</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>RPG</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Wes Martin</td>
+                <td>TM</td>
+                <td>12</td>
+                <td>7.8</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Andre Miles</td>
+                <td>BB</td>
+                <td>12</td>
+                <td>7.0</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>AJ Robinson</td>
+                <td>TM</td>
+                <td>8</td>
+                <td>6.9</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Victor Cruz</td>
+                <td>TM</td>
+                <td>12</td>
+                <td>6.8</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Cam Bryant</td>
+                <td>BB</td>
+                <td>5</td>
+                <td>6.8</td>
+            </tr>
+            
+</table>
+</div>
+
+<div class="card">
+<h2>Assists Per Game</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>APG</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Leon Brooks</td>
+                <td>OM</td>
+                <td>9</td>
+                <td>4.0</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Omar Kelly</td>
+                <td>HG</td>
+                <td>8</td>
+                <td>4.0</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Brian Foster</td>
+                <td>OM</td>
+                <td>12</td>
+                <td>3.9</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Caleb Wright</td>
+                <td>HG</td>
+                <td>12</td>
+                <td>3.8</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Ant Davis</td>
+                <td>TM</td>
+                <td>5</td>
+                <td>3.8</td>
+            </tr>
+            
+</table>
+</div>
+
+<div class="card">
+<h2>Steals Per Game</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>SPG</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Darius Evans</td>
+                <td>MOW</td>
+                <td>12</td>
+                <td>2.2</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Darren Cole</td>
+                <td>BB</td>
+                <td>12</td>
+                <td>2.1</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Greg Thomas</td>
+                <td>OM</td>
+                <td>12</td>
+                <td>2.0</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Quincy Hall</td>
+                <td>MOW</td>
+                <td>12</td>
+                <td>1.9</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Leon Brooks</td>
+                <td>OM</td>
+                <td>9</td>
+                <td>1.9</td>
+            </tr>
+            
+</table>
+</div>
+
+<div class="card">
+<h2>Blocks Per Game</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>BPG</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Nick Stone</td>
+                <td>TM</td>
+                <td>5</td>
+                <td>1.4</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Vince Parker</td>
+                <td>BB</td>
+                <td>5</td>
+                <td>1.4</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Ron Carter</td>
+                <td>OM</td>
+                <td>8</td>
+                <td>1.4</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Rico Sanders</td>
+                <td>HG</td>
+                <td>8</td>
+                <td>1.4</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Mike Wallace</td>
+                <td>OM</td>
+                <td>8</td>
+                <td>1.4</td>
+            </tr>
+            
+</table>
+</div>
+
+<div class="card">
+<h2>Field Goal %</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>FG%</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Caleb Wright</td>
+                <td>HG</td>
+                <td>12</td>
+                <td>60.3%</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Cameron Ellis</td>
+                <td>SH</td>
+                <td>12</td>
+                <td>59.1%</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Jordan Price</td>
+                <td>BB</td>
+                <td>6</td>
+                <td>59.1%</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Malik Hayes</td>
+                <td>TE</td>
+                <td>12</td>
+                <td>56.1%</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Kevin Ross</td>
+                <td>TE</td>
+                <td>8</td>
+                <td>55.9%</td>
+            </tr>
+            
+</table>
+</div>
+
+<div class="card">
+<h2>3 Point %</h2>
+<table>
+<tr><th>#</th><th>Player</th><th>Team</th><th>GP</th><th>3FG%</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Jaylen Moore</td>
+                <td>TE</td>
+                <td>7</td>
+                <td>61.1%</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Devin Harris</td>
+                <td>HG</td>
+                <td>12</td>
+                <td>54.8%</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Wes Martin</td>
+                <td>TM</td>
+                <td>12</td>
+                <td>52.2%</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Isaiah Ford</td>
+                <td>TE</td>
+                <td>12</td>
+                <td>51.3%</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Caleb Wright</td>
+                <td>HG</td>
+                <td>12</td>
+                <td>48.6%</td>
+            </tr>
+            
+</table>
+</div>
+
+</div>
+</div>
+</body>
+</html>

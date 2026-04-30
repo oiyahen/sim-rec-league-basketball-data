@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marcus Reed Player Report</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+    color: #222;
+}
+
+.container {
+    background: white;
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 25px;
+    align-items: start;
+}
+
+.player-title h1 {
+    margin-bottom: 5px;
+}
+
+.meta {
+    color: #666;
+    font-size: 15px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.card div {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+h2 {
+    margin-top: 35px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+}
+
+.shot-chart {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fafafa;
+}
+
+.shot-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.zone {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ccc;
+}
+
+.zone span {
+    display: block;
+    margin-top: 4px;
+}
+
+.hot {
+    background: #ffb3b3;
+}
+
+.warm {
+    background: #ffd9b3;
+}
+
+.normal {
+    background: #eeeeee;
+}
+
+.cold {
+    background: #cce0ff;
+}
+
+.ice {
+    background: #b3d9ff;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: none;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <div class="player-title">
+        <h1>Marcus Reed</h1>
+        <div class="meta">
+            Team: Bad Boyz |
+            Record: 8-4 |
+            Games Played: 12
+        </div>
+
+        <h2>Career Highs</h2>
+        <div class="card-grid">
+            <div class="card"><h3>MIN</h3><div>38</div></div>
+            <div class="card"><h3>PTS</h3><div>12</div></div>
+            <div class="card"><h3>REB</h3><div>10</div></div>
+            <div class="card"><h3>AST</h3><div>6</div></div>
+            <div class="card"><h3>STL</h3><div>3</div></div>
+            <div class="card"><h3>BLK</h3><div>2</div></div>
+        </div>
+    </div>
+
+    <div class="shot-chart">
+        <div class="shot-title">Estimated Shot Chart</div>
+        
+        <div class="zone normal">
+            <strong>Rim</strong>
+            <span>15-36</span>
+            <span>41.7%</span>
+        </div>
+        
+        <div class="zone cold">
+            <strong>Mid Range</strong>
+            <span>10-30</span>
+            <span>33.3%</span>
+        </div>
+        
+        <div class="zone cold">
+            <strong>Corner 3</strong>
+            <span>4-12</span>
+            <span>33.3%</span>
+        </div>
+        
+        <div class="zone ice">
+            <strong>Above Break 3</strong>
+            <span>6-21</span>
+            <span>28.6%</span>
+        </div>
+        
+        <div class="note">Shot zones are estimated from 2PA and 3PA, not real shot location tracking.</div>
+    </div>
+</div>
+
+<h2>Season Averages</h2>
+<div class="card-grid">
+    <div class="card"><h3>MPG</h3><div>21.6</div></div>
+    <div class="card"><h3>PPG</h3><div>6.5</div></div>
+    <div class="card"><h3>RPG</h3><div>5.8</div></div>
+    <div class="card"><h3>APG</h3><div>3.1</div></div>
+    <div class="card"><h3>SPG</h3><div>1.7</div></div>
+    <div class="card"><h3>BPG</h3><div>0.8</div></div>
+</div>
+
+<h2>Advanced Metrics</h2>
+<div class="card-grid">
+    <div class="card"><h3>FG%</h3><div>35.4%</div></div>
+    <div class="card"><h3>eFG%</h3><div>40.4%</div></div>
+    <div class="card"><h3>TS%</h3><div>35.6%</div></div>
+    <div class="card"><h3>AST/TO</h3><div>1.48</div></div>
+    <div class="card"><h3>Off Rating</h3><div>58.0</div></div>
+    <div class="card"><h3>Net Rating</h3><div>-34.5</div></div>
+</div>
+
+<div class="note">
+    Offensive Rating, Defensive Rating, and Net Rating are estimates because we do not have play-by-play or on-court lineup data yet.
+</div>
+
+<h2>Game Box Scores</h2>
+<div class="table-wrap">
+<table>
+<tr>
+    <th>Game</th>
+    <th>MIN</th>
+    <th>PTS</th>
+    <th>REB</th>
+    <th>AST</th>
+    <th>STL</th>
+    <th>BLK</th>
+    <th>TO</th>
+    <th>FG</th>
+    <th>FG%</th>
+    <th>3PT</th>
+    <th>3PT%</th>
+    <th>FT</th>
+    <th>eFG%</th>
+    <th>TS%</th>
+    <th>AST/TO</th>
+</tr>
+
+        <tr>
+            <td>1</td>
+            <td>11</td>
+            <td>10</td>
+            <td>5</td>
+            <td>6</td>
+            <td>2</td>
+            <td>0</td>
+            <td>4</td>
+            <td>5-12</td>
+            <td>41.7%</td>
+            <td>1-2</td>
+            <td>50.0%</td>
+            <td>0-3</td>
+            <td>45.8%</td>
+            <td>37.5%</td>
+            <td>1.50</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>11</td>
+            <td>3</td>
+            <td>10</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1-6</td>
+            <td>16.7%</td>
+            <td>0-3</td>
+            <td>0.0%</td>
+            <td>1-1</td>
+            <td>16.7%</td>
+            <td>23.3%</td>
+            <td>0.00</td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>14</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2-8</td>
+            <td>25.0%</td>
+            <td>1-1</td>
+            <td>100.0%</td>
+            <td>0-1</td>
+            <td>31.2%</td>
+            <td>23.7%</td>
+            <td>0.75</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td>18</td>
+            <td>9</td>
+            <td>10</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>4-11</td>
+            <td>36.4%</td>
+            <td>1-2</td>
+            <td>50.0%</td>
+            <td>1-1</td>
+            <td>40.9%</td>
+            <td>39.3%</td>
+            <td>0.00</td>
+        </tr>
+        
+        <tr>
+            <td>16</td>
+            <td>32</td>
+            <td>7</td>
+            <td>8</td>
+            <td>4</td>
+            <td>0</td>
+            <td>2</td>
+            <td>1</td>
+            <td>3-6</td>
+            <td>50.0%</td>
+            <td>1-3</td>
+            <td>33.3%</td>
+            <td>1-3</td>
+            <td>58.3%</td>
+            <td>47.8%</td>
+            <td>4.00</td>
+        </tr>
+        
+        <tr>
+            <td>19</td>
+            <td>25</td>
+            <td>8</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>5</td>
+            <td>4-9</td>
+            <td>44.4%</td>
+            <td>2-6</td>
+            <td>33.3%</td>
+            <td>0-1</td>
+            <td>55.6%</td>
+            <td>42.4%</td>
+            <td>0.80</td>
+        </tr>
+        
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>12</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>3</td>
+            <td>6-10</td>
+            <td>60.0%</td>
+            <td>1-5</td>
+            <td>20.0%</td>
+            <td>0-2</td>
+            <td>65.0%</td>
+            <td>55.1%</td>
+            <td>1.00</td>
+        </tr>
+        
+        <tr>
+            <td>28</td>
+            <td>27</td>
+            <td>11</td>
+            <td>10</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5-12</td>
+            <td>41.7%</td>
+            <td>2-4</td>
+            <td>50.0%</td>
+            <td>1-1</td>
+            <td>50.0%</td>
+            <td>44.2%</td>
+            <td>4.00</td>
+        </tr>
+        
+        <tr>
+            <td>31</td>
+            <td>25</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1-8</td>
+            <td>12.5%</td>
+            <td>1-1</td>
+            <td>100.0%</td>
+            <td>1-3</td>
+            <td>18.8%</td>
+            <td>16.1%</td>
+            <td>1.00</td>
+        </tr>
+        
+        <tr>
+            <td>34</td>
+            <td>18</td>
+            <td>5</td>
+            <td>3</td>
+            <td>6</td>
+            <td>3</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2-8</td>
+            <td>25.0%</td>
+            <td>0-3</td>
+            <td>0.0%</td>
+            <td>1-2</td>
+            <td>25.0%</td>
+            <td>28.2%</td>
+            <td>6.00</td>
+        </tr>
+        
+        <tr>
+            <td>37</td>
+            <td>38</td>
+            <td>5</td>
+            <td>6</td>
+            <td>1</td>
+            <td>3</td>
+            <td>1</td>
+            <td>5</td>
+            <td>2-7</td>
+            <td>28.6%</td>
+            <td>0-1</td>
+            <td>0.0%</td>
+            <td>1-2</td>
+            <td>28.6%</td>
+            <td>31.7%</td>
+            <td>0.20</td>
+        </tr>
+        
+        <tr>
+            <td>40</td>
+            <td>17</td>
+            <td>1</td>
+            <td>6</td>
+            <td>5</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0-2</td>
+            <td>0.0%</td>
+            <td>0-2</td>
+            <td>0.0%</td>
+            <td>1-4</td>
+            <td>0.0%</td>
+            <td>13.3%</td>
+            <td>5.00</td>
+        </tr>
+        
+</table>
+</div>
+
+</div>
+</body>
+</html>

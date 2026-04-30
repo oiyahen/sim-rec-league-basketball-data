@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>League Team Overview</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #black;
+    margin-bottom: 25px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 9px;
+    white-space: nowrap;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.offense {
+    background: #black;
+}
+
+.defense {
+    background: #black;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        max-width: none;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+<h1>League Team Overview</h1>
+<div class="subtitle">Rec league team performances for the season</div>
+
+<div class="table-wrap">
+<table>
+<tr>
+    <th>Team</th>
+    <th>Record</th>
+
+    <th class="offense">PPG</th>
+    <th class="offense">RPG</th>
+    <th class="offense">APG</th>
+    <th class="offense">SPG</th>
+    <th class="offense">BPG</th>
+    <th class="offense">TOPG</th>
+
+    <th class="offense">FGAPG</th>
+    <th class="offense">FGMPG</th>
+    <th class="offense">FG%</th>
+
+    <th class="offense">3FGAPG</th>
+    <th class="offense">3FGMPG</th>
+    <th class="offense">3FG%</th>
+
+    <th class="offense">FTAPG</th>
+    <th class="offense">FTMPG</th>
+    <th class="offense">FT%</th>
+
+    <th class="defense">PPGA</th>
+    <th class="defense">Opp FG%</th>
+    <th class="defense">Opp 3FG%</th>
+    <th class="defense">Forced TOPG</th>
+</tr>
+
+
+        <tr>
+            <td>Two Eazy</td>
+            <td>12-0</td>
+            <td>58.7</td>
+            <td>36.6</td>
+            <td>18.3</td>
+            <td>9.3</td>
+            <td>6.4</td>
+            <td>15.1</td>
+            <td>52.8</td>
+            <td>27.7</td>
+            <td>52.4%</td>
+            <td>21.5</td>
+            <td>8.3</td>
+            <td>38.8%</td>
+            <td>12.0</td>
+            <td>3.3</td>
+            <td>27.8%</td>
+            <td>51.6</td>
+            <td>46.0%</td>
+            <td>34.9%</td>
+            <td>16.6</td>
+        </tr>
+        
+        <tr>
+            <td>Bad Boyz</td>
+            <td>8-4</td>
+            <td>55.8</td>
+            <td>39.1</td>
+            <td>17.9</td>
+            <td>10.9</td>
+            <td>6.7</td>
+            <td>14.2</td>
+            <td>57.2</td>
+            <td>26.4</td>
+            <td>46.2%</td>
+            <td>19.3</td>
+            <td>6.4</td>
+            <td>33.2%</td>
+            <td>12.4</td>
+            <td>3.0</td>
+            <td>24.2%</td>
+            <td>51.5</td>
+            <td>48.1%</td>
+            <td>32.6%</td>
+            <td>14.8</td>
+        </tr>
+        
+        <tr>
+            <td>Skyhawks</td>
+            <td>8-4</td>
+            <td>51.2</td>
+            <td>34.1</td>
+            <td>16.9</td>
+            <td>7.8</td>
+            <td>5.8</td>
+            <td>15.1</td>
+            <td>49.3</td>
+            <td>24.1</td>
+            <td>48.8%</td>
+            <td>19.4</td>
+            <td>7.7</td>
+            <td>39.5%</td>
+            <td>12.0</td>
+            <td>3.0</td>
+            <td>25.0%</td>
+            <td>49.2</td>
+            <td>45.6%</td>
+            <td>42.1%</td>
+            <td>18.2</td>
+        </tr>
+        
+        <tr>
+            <td>Magic onna Wed</td>
+            <td>7-5</td>
+            <td>51.2</td>
+            <td>34.5</td>
+            <td>21.6</td>
+            <td>10.6</td>
+            <td>5.2</td>
+            <td>18.3</td>
+            <td>53.2</td>
+            <td>23.9</td>
+            <td>44.9%</td>
+            <td>15.6</td>
+            <td>5.6</td>
+            <td>35.8%</td>
+            <td>13.7</td>
+            <td>3.3</td>
+            <td>24.4%</td>
+            <td>49.5</td>
+            <td>45.4%</td>
+            <td>36.6%</td>
+            <td>15.8</td>
+        </tr>
+        
+        <tr>
+            <td>The Mob</td>
+            <td>5-7</td>
+            <td>47.3</td>
+            <td>40.2</td>
+            <td>18.6</td>
+            <td>8.9</td>
+            <td>6.8</td>
+            <td>16.7</td>
+            <td>53.0</td>
+            <td>22.0</td>
+            <td>41.5%</td>
+            <td>19.7</td>
+            <td>7.1</td>
+            <td>36.0%</td>
+            <td>13.1</td>
+            <td>3.3</td>
+            <td>25.5%</td>
+            <td>49.1</td>
+            <td>45.0%</td>
+            <td>36.9%</td>
+            <td>15.2</td>
+        </tr>
+        
+        <tr>
+            <td>HomeGrown</td>
+            <td>2-10</td>
+            <td>46.2</td>
+            <td>32.9</td>
+            <td>21.3</td>
+            <td>9.7</td>
+            <td>5.5</td>
+            <td>16.8</td>
+            <td>49.8</td>
+            <td>21.8</td>
+            <td>43.8%</td>
+            <td>16.7</td>
+            <td>6.8</td>
+            <td>40.5%</td>
+            <td>11.2</td>
+            <td>2.6</td>
+            <td>23.0%</td>
+            <td>50.2</td>
+            <td>42.8%</td>
+            <td>37.3%</td>
+            <td>16.2</td>
+        </tr>
+        
+        <tr>
+            <td>Oldmen</td>
+            <td>0-12</td>
+            <td>43.2</td>
+            <td>31.9</td>
+            <td>20.1</td>
+            <td>10.8</td>
+            <td>7.5</td>
+            <td>16.3</td>
+            <td>49.6</td>
+            <td>20.2</td>
+            <td>40.7%</td>
+            <td>18.7</td>
+            <td>6.5</td>
+            <td>34.8%</td>
+            <td>12.3</td>
+            <td>2.9</td>
+            <td>23.6%</td>
+            <td>52.5</td>
+            <td>45.9%</td>
+            <td>37.7%</td>
+            <td>15.8</td>
+        </tr>
+        
+
+</table>
+</div>
+
+</div>
+</body>
+</html>
